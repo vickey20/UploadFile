@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:weightSum="2" >
+
+         <Button
+             android:id="@+id/start"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Start"
+             android:layout_weight="1" />
+
+         <Button
+             android:id="@+id/stop"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Stop"
+             android:layout_weight="1" />
+
+     </LinearLayout>
+     
+     <TextView
+         android:id="@+id/textViewService"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:text="Service is not running"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <Button
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:text="Select file"
+         android:id="@+id/selectFile"
+     />
+
+     <TextView
+         android:id="@+id/textViewFile"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+
+     <EditText
+         android:id="@+id/editTextServerAddress"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/buttonUpload"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="20dp"
+         android:text="Upload" />
+
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+		 android:layout_margin="10dp"
+         android:id="@+id/messageText"
+         android:textColor="#000000"
+     />
+     
+  </LinearLayout>
